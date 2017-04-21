@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hago homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/plugins/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body class="layout-full-width">
+<main>
+    <header id="header">
+        <nav class="header-nav hide-xs">
+            <!--電腦版-->
+            <div class="pull-left">
+                <div class="inline-block-wrap">
+                    <div id="_desktop_user_info">
+                        <div class="user-info">
+                            <a href="">
+                                <span class="hidden-sm-down">Sign in</span>
+                            </a>
+                            /
+                            <a class="" href="">
+                                Sign up
+                            </a>
+                        </div>
+                    </div>
+                    <div id="_desktop_language_selector">
+                        <div class="language-selector-wrapper">
+                            <div class="language-selector dropdown js-dropdown">
+                                <span class="expand-more" data-toggle="dropdown">English</span>
+                                <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-sm-down">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-menu hide-xs">
+                                    <li class="current">
+                                        <a href="" class="dropdown-item">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item">繁體中文</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="inline-block-wrap">
+                    <div id="search_widget" class="search-widget">
+                        <div class="search-dropdown dropdown js-dropdown">
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-search fa-2x"></i></span>
+                            <div class="dropdown-menu">
+                                <form method="get" action="http://prestashop/en/search" id="search-show">
+                                    <input type="hidden" name="controller" value="search">
+                                    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" name="s" value="" placeholder="Search our catalog" class="ui-autocomplete-input" autocomplete="off">
+                                    <button type="submit" id="search_widget_submit">
+                                        <i class="fa fa-search fa-2x"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="_desktop_cart">
+                        <div class="blockcart cart-preview inactive" data-refresh-url="http://prestashop/en/module/ps_shoppingcart/ajax">
+                            <div class="header">
+                                <i class="fa fa-cart-arrow-down fa-2x"></i> <span class="cart-products-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-top navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav-bs" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <i class="fa fa-navicon"></i>
+                    </button>
+                    <div id="_mobile_cart" class="mobile-cart hide-md">
+                        <div class="blockcart cart-preview inactive" data-refresh-url="http://prestashop/en/module/ps_shoppingcart/ajax">
+                            <div class="header">
+                                <i class="fa fa-cart-arrow-down fa-2x"></i> <span class="cart-products-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--mobile user-->
+                    <div class="user-info hide-md">
+                        <a href=""><i class="fa fa-user"></i></a>
+                    </div>
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="header-nav-bs">
+                    <ul class="top-header nav navbar-nav">
+                        <li class="active dropdown">
+                            <a href="#">PRODUCTS</a>
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-angle-down"></i></span>
+                            <div class="down-level-1 dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Baby Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kids Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Grocery</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Drinks and Beverages</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">BRANDS</a>
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-angle-down"></i></span>
+                            <div class="down-level-1 dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Hago</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">SALES LOCATIONS</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="language-selector-wrapper">
+                        <!--手機顯示-->
+                        <span class="hide-md">Language:</span>
+                        <div class="language-selector dropdown js-dropdown">
+                            <!--手機版-->
+                            <select class="hide-md">
+                                <option value="http://prestashop/en/" selected="selected">English</option>
+                                <option value="http://prestashop/tw/">繁體中文</option>
+                            </select>
+                            <!--手機版 end-->
+                        </div>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </header>
+    <section id="wrapper">
+        <div class="homepage-slider">
+            <div id="home-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-carousel" data-slide-to="1"></li>
+                    <li data-target="#home-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="#">
+                            <div class="bg-img home-banner" style="background-image: url('assets/img/demo/banner.jpg')"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="bg-img home-banner" style="background-image: url('assets/img/demo/banner2.jpg')"></div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="bg-img home-banner" style="background-image: url('assets/img/demo/brand.jpg')"></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="product-wrapper">
+                <h2 class="section-title">NEW PRODUCTS</h2>
+                <div id="product-carousel-1" class="owl-carousel">
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product1.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Fructose Coconut Cookies</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 35.00</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product2.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Peanut Butter Crunchy</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 25.00</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product3.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Organic Carrots with Potatoes</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 21.90</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product1.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Fructose Coconut Cookies</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 35.00</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-green">
+            <div class="product-wrapper">
+                <h2 class="section-title">SPECIAL PRODUCTS</h2>
+                <div id="product-carousel-2" class="owl-carousel">
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product1.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Fructose Coconut Cookies</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 35.00</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product2.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Peanut Butter Crunchy</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 25.00</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product3.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Organic Carrots with Potatoes</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 21.90</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product-list">
+                            <a href="#" class="product-img">
+                                <img src="assets/img/demo/product1.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="product-description">
+                                <h4 class="product-title" itemprop="name">
+                                    <a href="">Fructose Coconut Cookies</a>
+                                </h4>
+                                <div class="product-price-and-shipping">
+                                    <span itemprop="price" class="price">HK$ 35.00</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags">
+                                <li class="new">New</li>
+                            </ul>
+
+                            <div class="highlighted-informations">
+                                <form action="" method="post">
+                                    <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                        <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brands-wrapper">
+            <div class="container">
+                <h2 class="section-title">POPULAR BRANDS</h2>
+                <div id="brands-carousel-1" class="owl-carousel">
+                    <div class="item">
+                        <div class="brand-list">
+                            <span class="img-align-helper"></span>
+                            <a href="">
+                                <img class="brand-img" src="assets/img/demo/brand-logo-1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="brand-list">
+                            <span class="img-align-helper"></span>
+                            <a href="">
+                                <img class="brand-img" src="assets/img/demo/brand-logo-2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="brand-list">
+                            <span class="img-align-helper"></span>
+                            <a href="">
+                                <img class="brand-img" src="assets/img/demo/brand-logo-3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="brand-list">
+                            <span class="img-align-helper"></span>
+                            <a href="">
+                                <img class="brand-img" src="assets/img/demo/brand-logo-4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="brand-list">
+                            <span class="img-align-helper"></span>
+                            <a href="">
+                                <img class="brand-img" src="assets/img/demo/brand-logo-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="brand-list">
+                            <span class="img-align-helper"></span>
+                            <a href="">
+                                <img class="brand-img" src="assets/img/demo/brand-logo-6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-wrapper">
+            <div class=" container blog-slider">
+                <h2 class="section-title">BLOG POSTS</h2>
+                <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#blog-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blog-carousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <a href="#"><img src="assets/img/demo/blog-1.jpg" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <table class="table-wall blog-table">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3 class="font-green font-simiblod">
+                                                    <a href="#">Helping to Manage and Cure Diabetes.</a>
+                                                </h3>
+                                                <div class="blog-tags">
+                                                    <span class="blog-date">Mar / 23</span>
+                                                    <span class="blog-tag"><i class="fa fa-tag"></i> News</span>
+                                                </div>
+                                                <p>Fifty50 was started in 1989 by 3 people with 3 products made especially for individuals with diabetes. One had diabetes, one was a diabetes educator, and one was a volunteer raising money for diabetes research. Our dream was to create great tasting  Low Glycemic foods that individuals living with diabetes could enjoy while managing their disease and, at the same time, try to help find a diabetes cure[……]</p>
+
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</main>
+</body>
+</html>

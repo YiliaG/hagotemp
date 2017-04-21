@@ -1,0 +1,599 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+*/
+/*** common style **/
+/* line 7, ../sass/main.scss */
+a:hover, a:visited {
+  text-decoration: none;
+}
+
+/* line 10, ../sass/main.scss */
+.font-green {
+  color: #93c241;
+}
+
+/* line 13, ../sass/main.scss */
+.font-simiblod {
+  font-weight: 600;
+}
+
+/* line 16, ../sass/main.scss */
+.font-bold {
+  font-weight: 700;
+}
+
+/* line 20, ../sass/main.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+/* line 23, ../sass/main.scss */
+h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
+  color: inherit;
+}
+
+/*** common style end **/
+/* line 29, ../sass/main.scss */
+.layout-full-width {
+  max-width: 1980px;
+}
+
+/* line 32, ../sass/main.scss */
+#header {
+  color: #7d6a55;
+}
+/* line 35, ../sass/main.scss */
+#header .header-nav {
+  max-height: 50px;
+  padding: .9375rem 37px;
+  margin-bottom: 30px;
+}
+/* line 40, ../sass/main.scss */
+#header .header-nav .inline-block-wrap > div {
+  display: inline-block;
+}
+/* line 44, ../sass/main.scss */
+#header .header-nav .fa-cart-arrow-down {
+  font-size: 1.8em;
+}
+/* line 50, ../sass/main.scss */
+#header .user-info a {
+  color: #7d6a55;
+}
+/* line 55, ../sass/main.scss */
+#header .language-selector-wrapper {
+  margin-left: 2.5rem;
+}
+/* line 59, ../sass/main.scss */
+#header .language-selector {
+  white-space: nowrap;
+  cursor: pointer;
+}
+/* line 64, ../sass/main.scss */
+#header .fa-caret-down {
+  padding-left: .375rem;
+  color: #7d6a55;
+}
+/* line 69, ../sass/main.scss */
+#header .blockcart {
+  margin-left: .9375rem;
+}
+/* line 72, ../sass/main.scss */
+#header .blockcart .header {
+  position: relative;
+}
+/* line 76, ../sass/main.scss */
+#header .blockcart.inactive .cart-products-count {
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  background-color: #93c241;
+  border-radius: 50%;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/**** search   ***/
+/* line 90, ../sass/main.scss */
+.search-widget form input[type=text] {
+  border: 1px solid #7d6a55;
+  padding: 2px 10px;
+  min-width: 255px;
+}
+/* line 94, ../sass/main.scss */
+.search-widget form input[type=text]:active, .search-widget form input[type=text]:hover, .search-widget form input[type=text]:focus, .search-widget form input[type=text]:visited {
+  outline: none;
+}
+/* line 99, ../sass/main.scss */
+.search-widget form button[type=submit] {
+  background: none;
+  border: none;
+}
+/* line 102, ../sass/main.scss */
+.search-widget form button[type=submit]:active, .search-widget form button[type=submit]:hover, .search-widget form button[type=submit]:focus, .search-widget form button[type=submit]:visited {
+  color: #93c241;
+  outline: none;
+}
+
+/* line 110, ../sass/main.scss */
+.search-dropdown .dropdown-menu {
+  position: absolute;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 293px;
+}
+/* line 121, ../sass/main.scss */
+.search-dropdown .fa-2x {
+  font-size: 24px;
+  cursor: pointer;
+}
+/* line 124, ../sass/main.scss */
+.search-dropdown .fa-2x:hover {
+  color: #93c241;
+}
+
+/**** search  end ***/
+/**** header nav ***/
+/* line 134, ../sass/main.scss */
+.header-top a {
+  color: #7c6a55;
+}
+/* line 137, ../sass/main.scss */
+.header-top .user-info {
+  float: right;
+  font-size: 24px;
+  margin: 10px 7px;
+}
+
+/* line 144, ../sass/main.scss */
+.top-header.navbar-nav {
+  float: none;
+}
+
+/* line 148, ../sass/main.scss */
+.top-header > li {
+  position: relative;
+  overflow: hidden;
+}
+/* line 151, ../sass/main.scss */
+.top-header > li > a {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 156, ../sass/main.scss */
+.top-header > li .fa-angle-down {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 167, ../sass/main.scss */
+.top-header li:hover > a {
+  color: #93c241;
+}
+
+/* line 172, ../sass/main.scss */
+.down-level-1 {
+  width: 100%;
+  background-color: #f4f8ee;
+}
+/* line 176, ../sass/main.scss */
+.down-level-1:before {
+  content: "";
+  height: 22px;
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  left: 0;
+}
+/* line 185, ../sass/main.scss */
+.down-level-1:after {
+  font-family: FontAwesome;
+  content: "\f0d8";
+  position: absolute;
+  top: -32px;
+  left: 45%;
+  font-size: 30px;
+  color: #f4f8ee;
+}
+/* line 195, ../sass/main.scss */
+.down-level-1 li a {
+  display: block;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  /* line 202, ../sass/main.scss */
+  .navbar-header {
+    margin-bottom: 20px;
+  }
+
+  /* line 205, ../sass/main.scss */
+  .navbar > .container .navbar-brand {
+    display: block;
+    width: 100%;
+  }
+  /* line 208, ../sass/main.scss */
+  .navbar > .container .navbar-brand img {
+    margin: auto;
+  }
+
+  /* line 213, ../sass/main.scss */
+  .top-header > li {
+    float: left;
+    width: 25%;
+  }
+  /* line 216, ../sass/main.scss */
+  .top-header > li > a {
+    text-align: center;
+  }
+  /* line 219, ../sass/main.scss */
+  .top-header > li .fa-angle-down {
+    display: none;
+  }
+  /* line 223, ../sass/main.scss */
+  .top-header li:hover {
+    overflow: visible;
+  }
+  /* line 225, ../sass/main.scss */
+  .top-header li:hover .down-level-1 {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* line 230, ../sass/main.scss */
+  .top-header .dropdown-menu {
+    display: block;
+    border: 0;
+    box-shadow: none;
+  }
+
+  /* line 238, ../sass/main.scss */
+  .down-level-1 {
+    position: absolute;
+    top: 55px;
+    left: -15px;
+    opacity: 0;
+    visibility: hidden;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+}
+/**** header nav  end ***/
+/* line 249, ../sass/main.scss */
+#wrapper .breadcrumb[data-depth="1"] {
+  display: none;
+}
+
+/**** mobile heaader   ***/
+/* line 253, ../sass/main.scss */
+.mobile-cart {
+  float: right;
+  font-size: 15px;
+  margin: 15px 15px 15px 0;
+}
+
+@media (max-width: 767px) {
+  /* line 259, ../sass/main.scss */
+  #header .language-selector-wrapper {
+    margin-left: 0;
+  }
+
+  /* line 262, ../sass/main.scss */
+  .language-selector {
+    display: inline-block;
+  }
+
+  /* line 265, ../sass/main.scss */
+  .navbar-brand img {
+    width: 200px;
+    margin: 10px auto;
+  }
+
+  /* line 269, ../sass/main.scss */
+  .navbar-brand {
+    line-height: 50px;
+    vertical-align: middle;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 413px) {
+  /* line 277, ../sass/main.scss */
+  .navbar-brand img {
+    width: 160px;
+    margin: 15px auto;
+  }
+}
+/**** mobile heaader  end ***/
+/**** image slider   ***/
+/* line 285, ../sass/main.scss */
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 290, ../sass/main.scss */
+.home-banner {
+  height: 800px;
+}
+
+/**** image slider  end ***/
+/**** owl carousel ***/
+/* line 297, ../sass/main.scss */
+.owl-prev, .owl-next {
+  color: #cccccc;
+  font-size: 80px;
+  position: absolute;
+  top: 32%;
+  width: 60px;
+}
+/* line 303, ../sass/main.scss */
+.owl-prev:before, .owl-next:before {
+  font-family: FontAwesome;
+}
+/* line 306, ../sass/main.scss */
+.owl-prev:hover, .owl-next:hover {
+  color: #93c241;
+}
+
+/* line 310, ../sass/main.scss */
+.owl-prev {
+  left: -60px;
+}
+/* line 312, ../sass/main.scss */
+.owl-prev:before {
+  content: "\f104";
+}
+
+/* line 316, ../sass/main.scss */
+.owl-next {
+  right: -60px;
+  text-align: right;
+}
+/* line 319, ../sass/main.scss */
+.owl-next:before {
+  content: "\f105";
+}
+
+/* line 323, ../sass/main.scss */
+.owl-controls {
+  display: none !important;
+}
+
+/* line 327, ../sass/main.scss */
+.owl-carousel:hover .owl-controls {
+  display: block !important;
+}
+
+/* line 331, ../sass/main.scss */
+.hr-green {
+  border-color: #93c241;
+}
+
+/**** owl carousel  end ***/
+/**** product  ***/
+/* line 336, ../sass/main.scss */
+.product-wrapper {
+  margin: 40px auto;
+}
+
+/* line 339, ../sass/main.scss */
+.section-title {
+  font-weight: 700;
+  text-align: center;
+  color: #93c241;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* line 346, ../sass/main.scss */
+.product-list {
+  text-align: center;
+  position: relative;
+  border: 1px solid transparent;
+}
+/* line 350, ../sass/main.scss */
+.product-list:hover {
+  border-color: #93c241;
+}
+/* line 353, ../sass/main.scss */
+.product-list .product-img {
+  padding: 80px 20px 20px;
+  display: block;
+}
+/* line 357, ../sass/main.scss */
+.product-list a img {
+  max-width: 85%;
+  margin: auto;
+}
+
+/* line 362, ../sass/main.scss */
+.product-title a {
+  color: #4c4c4c;
+  font-weight: 600;
+}
+/* line 365, ../sass/main.scss */
+.product-title a:hover {
+  color: #93c241;
+}
+
+/* line 369, ../sass/main.scss */
+.product-description {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 20px;
+}
+
+/* line 376, ../sass/main.scss */
+.price {
+  font-weight: 600;
+  font-size: 30px;
+  color: #e23e57;
+}
+
+/* line 381, ../sass/main.scss */
+.product-flags {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 385, ../sass/main.scss */
+.product-flags .new {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #fff;
+  background: #ed4054;
+  text-transform: uppercase;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 65px;
+}
+
+/* line 400, ../sass/main.scss */
+.highlighted-informations {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  transition: bottom .3s;
+}
+
+/* line 409, ../sass/main.scss */
+.product-list:hover .highlighted-informations {
+  bottom: 88px;
+}
+
+/* line 412, ../sass/main.scss */
+.add-to-cart {
+  border-radius: 17px;
+  -moz-box-shadow: #808080 1px 1px 2px;
+  -webkit-box-shadow: #808080 1px 1px 2px;
+  box-shadow: #808080 1px 1px 2px;
+}
+/* line 415, ../sass/main.scss */
+.add-to-cart i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/**** product end ***/
+/**** brands show ***/
+/* line 423, ../sass/main.scss */
+.brands-wrapper {
+  background-image: url("../../assets/img/demo/brand-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+/* line 430, ../sass/main.scss */
+.brand-list {
+  height: 150px;
+  text-align: center;
+}
+
+/* line 434, ../sass/main.scss */
+.img-align-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 439, ../sass/main.scss */
+.brand-list .brand-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 443, ../sass/main.scss */
+brands-wrapper .owl-prev, brands-wrapper .owl-next {
+  top: 0;
+}
+
+/**** brands show end ***/
+/**** blog show ***/
+/* line 449, ../sass/main.scss */
+.table-wall {
+  width: 100%;
+}
+
+/* line 452, ../sass/main.scss */
+.blog-table {
+  height: 550px;
+}
+
+/* line 455, ../sass/main.scss */
+.blog-tags {
+  padding: 10px 0;
+}
+
+/* line 458, ../sass/main.scss */
+.blog-date {
+  color: #808080;
+  margin-right: 30px;
+}
+
+/* line 462, ../sass/main.scss */
+.blog-tag {
+  color: #ed4054;
+}
+
+/* line 465, ../sass/main.scss */
+.blog-table p {
+  line-height: 1.8;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  /* line 469, ../sass/main.scss */
+  .blog-table {
+    min-height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 474, ../sass/main.scss */
+  .blog-table {
+    height: auto;
+  }
+}
+/**** blog show end ***/
+@media (min-width: 768px) {
+  /* line 481, ../sass/main.scss */
+  .hide-md {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 486, ../sass/main.scss */
+  .hide-xs {
+    display: none !important;
+  }
+}
+/* line 490, ../sass/main.scss */
+.h {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
