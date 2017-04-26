@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Hago</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body class="layout-full-width">
+<main>
+    <header id="header">
+        <nav class="header-nav hide-xs">
+            <!--電腦版-->
+            <div class="pull-left">
+                <div class="inline-block-wrap">
+                    <div id="_desktop_user_info">
+                        <div class="user-info">
+                            <a href="">
+                                <span class="hidden-sm-down">Sign in</span>
+                            </a>
+                            /
+                            <a class="" href="">
+                                Sign up
+                            </a>
+                        </div>
+                    </div>
+                    <div id="_desktop_language_selector">
+                        <div class="language-selector-wrapper">
+                            <div class="language-selector dropdown js-dropdown">
+                                <span class="expand-more" data-toggle="dropdown">English</span>
+                                <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-sm-down">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-menu hide-xs">
+                                    <li class="current">
+                                        <a href="" class="dropdown-item">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item">繁體中文</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="inline-block-wrap">
+                    <div id="search_widget" class="search-widget">
+                        <div class="search-dropdown dropdown js-dropdown">
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-search fa-2x"></i></span>
+                            <div class="dropdown-menu">
+                                <form method="get" action="http://prestashop/en/search" id="search-show">
+                                    <input type="hidden" name="controller" value="search">
+                                    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" name="s" value="" placeholder="Search our catalog" class="ui-autocomplete-input" autocomplete="off">
+                                    <button type="submit" id="search_widget_submit">
+                                        <i class="fa fa-search fa-2x"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="_desktop_cart">
+                        <div class="blockcart cart-preview inactive" data-refresh-url="http://prestashop/en/module/ps_shoppingcart/ajax">
+                            <div class="header">
+                                <i class="fa fa-cart-arrow-down fa-2x"></i> <span class="cart-products-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-top navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav-bs" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <i class="fa fa-navicon"></i>
+                    </button>
+                    <div id="_mobile_cart" class="mobile-cart hide-md">
+                        <div class="blockcart cart-preview inactive" data-refresh-url="http://prestashop/en/module/ps_shoppingcart/ajax">
+                            <div class="header">
+                                <i class="fa fa-cart-arrow-down fa-2x"></i> <span class="cart-products-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--mobile user-->
+                    <div class="user-info hide-md">
+                        <a href=""><i class="fa fa-user"></i></a>
+                    </div>
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="header-nav-bs">
+                    <ul class="dp-flexbox top-header nav navbar-nav">
+                        <li class="active dropdown">
+                            <a href="#">PRODUCTS</a>
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-angle-down"></i></span>
+                            <div class="down-level-1 dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Baby Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kids Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Grocery</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Drinks and Beverages</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">BRANDS</a>
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-angle-down"></i></span>
+                            <div class="down-level-1 dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Hago</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">SALES LOCATIONS</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="language-selector-wrapper">
+                        <!--手機顯示-->
+                        <span class="hide-md">Language:</span>
+                        <div class="language-selector dropdown js-dropdown">
+                            <!--手機版-->
+                            <select class="hide-md">
+                                <option value="http://prestashop/en/" selected="selected">English</option>
+                                <option value="http://prestashop/tw/">繁體中文</option>
+                            </select>
+                            <!--手機版 end-->
+                        </div>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </header>
+    <section id="wrapper">
+        <div class="container">
+            <!--麵包屑導航-->
+            <ol class="breadcrumb">
+                <li>
+                    <a href="">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <span>holle</span>
+                    </a>
+                </li>
+            </ol>
+
+            <div class="banner-wrapper">
+                <div class="bg-img top-banner" style="background-image: url('assets/img/demo/banner-brand.jpg')"></div>
+            </div>
+            <div id="content-wrapper">
+                <div class="brand-introduction">
+                    <p>Holle makes organic baby food in Demeter quality. The company was founded in 1933 and has uncompromisingly rejected chemical processing and preservatives from the very beginning.</p>
+                    <p>The company has sites in Riehen in Switzerland and in Grünsfeld in the Baden-Württemberg region of Germany. The product range includes baby milks and infant formula, baby porridges and a complete range of jars. Baby weaning oil, teas and snacks round off our comprehensive offering. To learn more about our products visit our product pages.</p>
+                    <p>Holle products are sold in more than 40 countries. For the last 35 years Holle baby food has been available, not only in Switzerland and Germany, but also in specialist shops throughout Europe. </p>
+                    <p>We are proud of our company's 80 years history and of the fact that Holle is one of the leading manufacturers of organic baby food. Nowhere else are quality expectations higher than with baby products. Your trust in Holle as parents is very much appreciated by us and we undertake to maintain our close connection to biodynamic agriculture.</p>
+                    <p>Holle is one of the oldest baby food manufacturers in Europe. Albert Diefenbach founded the Holle food AG as a specialist food processing company in Arlsheim in 1933. This was the foundation for organic baby food. Even then the company's philosophy was based on anthroposophical dietary principles and biodynamic quality.</p>
+                    <p>More than 80 products carry the "Love, Comfort and Holle" message. Since the very beginning natural quality has been our guiding principle - even 80 years ago Holle uncompromisingly rejected chemical processing and preservatives. Today, we use only raw ingredients from biodynamic or organic agriculture and gently process them for your baby. That is the basis of Holle's special quality.<br>We would like to thank you for your trust. We promise to continue to do all we can to help your baby thrive.
+                    </p>
+                </div>
+                <div class="product-wrapper">
+                    <h2 class="section-title">POPULAR PRODUCTS</h2>
+                    <div class="row product-style-2">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="product-list">
+                                <a href="#" class="product-img">
+                                    <img src="assets/img/demo/product7.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="product-description">
+                                    <h4 class="product-title" itemprop="name">
+                                        <a href="">Organic Infant Goat Milk Follow-on Formula</a>
+                                    </h4>
+                                    <div class="product-price-and-shipping">
+                                        <span itemprop="price" class="price">HK$ 240.00</span>
+                                    </div>
+                                </div>
+                                <div class="view-more-master">
+                                    <a href="" class="view-product">more+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="product-list">
+                                <a href="#" class="product-img">
+                                    <img src="assets/img/demo/product10.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="product-description">
+                                    <h4 class="product-title" itemprop="name">
+                                        <a href="">Organic Milk Cereal</a>
+                                    </h4>
+                                    <div class="product-price-and-shipping">
+                                        <span itemprop="price" class="price">HK$ 24.00</span>
+                                    </div>
+                                </div>
+                                <div class="view-more-master">
+                                    <a href="" class="view-product">more+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="product-list">
+                                <a href="#" class="product-img">
+                                    <img src="assets/img/demo/product3.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="product-description">
+                                    <h4 class="product-title" itemprop="name">
+                                        <a href="">Organic Carrots with Potatoes</a>
+                                    </h4>
+                                    <div class="product-price-and-shipping">
+                                        <span itemprop="price" class="price">HK$ 35.00</span>
+                                        <span class="old-price">HK$ 29.90</span>
+                                    </div>
+                                </div>
+                                <div class="view-more-master">
+                                    <a href="" class="view-product">more+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="product-list">
+                                <a href="#" class="product-img">
+                                    <img src="assets/img/demo/product3-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="product-description">
+                                    <h4 class="product-title" itemprop="name">
+                                        <a href="">Organic Carrots with Banana</a>
+                                    </h4>
+                                    <div class="product-price-and-shipping">
+                                        <span itemprop="price" class="price">HK$ 25.90</span>
+                                    </div>
+                                </div>
+                                <div class="view-more-master">
+                                    <a href="" class="view-product">more+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Get to Know Us</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About Hago</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy Statement</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Let Us Help You</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About payment</a>
+                            </li>
+                            <li>
+                                <a href="#">About delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">About return & replacement</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Communities</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Contacts and Location</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Sales locations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="media-icon-wrapper">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                        <div class="copyright">Copyright © 2017 HAGO Limited. All Right Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="scrollUp" href="javascript:void(0)"><i class="fa fa-angle-up fa-2x"></i></a>
+</main>
+</body>
+</html>

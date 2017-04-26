@@ -4,7 +4,7 @@
 */
 @import "compass/css3";
 /*** common style **/
-a:hover, a:visited {
+a:hover, a:active,a:focus,a:visited {
   text-decoration: none;
 }
 .font-green {
@@ -25,8 +25,14 @@ a:hover, a:visited {
 .po-r {
   position: relative;
 }
+.mt30 {
+  margin-top: 30px!important;
+}
 .mb30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px!important;
+}
+.mt60 {
+  margin-top: 60px!important;
 }
 h1, h2, h3, h4, h5, h6 {
   a {
@@ -40,6 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .layout-full-width {
   max-width: 1980px;
+}
+.top-banner {
+  height: 450px;
 }
 #header {
   color: #7d6a55;
@@ -156,6 +165,9 @@ h1, h2, h3, h4, h5, h6 {
 
   }
 }
+.header-top.navbar{
+  border-bottom: 3px solid #93c241;
+}
 .top-header.navbar-nav {
   float: none;
 }
@@ -187,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .down-level-1 {
   //display: none;
   width: 100%;
+  min-width: 200px;
   background-color: #f4f8ee;
   &:before {
     content: "";
@@ -224,10 +237,22 @@ h1, h2, h3, h4, h5, h6 {
       margin: auto;
     }
   }
+
+  /**** 彈性盒子佈局 ***/
+  .dp-flexbox.top-header {
+    @include display-flex(flex);
+    @include flex-wrap(nowrap);
+    @include justify-content(center);
+  }
+  .dp-flexbox.top-header > li {
+    @include flex-grow(1);
+  }
+  /**** 彈性盒子佈局  end ***/
+
   .top-header {
     > li {
-      float: left;
-      width: 25%;
+      //float: left;
+      //width: 25%;
       > a {
         text-align: center;
       }
@@ -261,9 +286,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 /**** header nav  end ***/
 
+/**** breadcrumb ***/
 #wrapper .breadcrumb[data-depth="1"] {
   display: none;
 }
+.breadcrumb{
+  li.active a{
+    color: #93c241;
+  }
+  a {
+    color: #4c4c4c;
+    text-transform: capitalize;
+  }
+}
+/**** breadcrumb  end ***/
+
 /**** mobile heaader   ***/
 .mobile-cart {
   float: right;
@@ -273,6 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   #header .language-selector-wrapper {
     margin-left: 0;
+    margin-bottom: 20px;
   }
   .language-selector {
     display: inline-block;
@@ -392,6 +430,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
   }
 }
+.product-title{
+  height: 40px;
+  overflow: hidden;
+  color: #4c4c4c;
+}
 .product-title a {
   color: #4c4c4c;
   font-weight: 600;
@@ -408,14 +451,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .price {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
   color: #e23e57;
+}
+.old-price {
+  font-weight: 300;
+  font-size: 18px;
+  color: #808080;
+  text-decoration: line-through;
 }
 .product-flags {
   position: absolute;
   top: 0;
   width: 100%;
-  .new {
+  .new, .sale {
     display: block;
     position: absolute;
     left: 20px;
@@ -423,11 +472,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background: #ed4054;
     text-transform: uppercase;
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     font-size: 18px;
-    line-height: 65px;
+    line-height: 50px;
+  }
+  .sale {
+    left: auto;
+    right: 20px;
+    top: 20px;
+    background: #febc23;
   }
 }
 .highlighted-informations {
@@ -455,7 +510,6 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 100px;
   }
 }
-
 /**** product end ***/
 
 /**** brands show ***/
@@ -619,6 +673,287 @@ h1, h2, h3, h4, h5, h6 {
 }
 /**** footer end ***/
 
+/**** backtop ***/
+#scrollUp {
+  display: none;
+  background-color: #ed4054;
+  color: #fff;
+  bottom: 30px;
+  right: 20px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  padding-top: 5px;
+  position: fixed;
+  z-index: 2147483647;
+}
+/**** backtop end ***/
+
+/**** category ***/
+.category-ul, .filters-collapse {
+  background-color: #f4f8ee;
+  padding: 15px;
+  text-transform: capitalize;
+}
+.category-ul {
+  a {
+    color: #4d4d4d;
+  }
+  > li {
+    position: relative;
+    padding: 3px 0;
+  }
+  > li > a {
+    font-weight: 600;
+  }
+  li:hover > a {
+    color: #93c241;
+  }
+  .collapse-arrow {
+    position: absolute;
+    top: -4px;
+    right: 0px;
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+.collapse-arrow.collapsed .fa-caret-down:before {
+  content: "\f0da";
+}
+.panel-collapse {
+  margin-bottom: 10px;
+}
+.products-sort-order {
+  .select-title {
+    display: inline-block;
+    margin-left: .375rem;
+    width: 100%;
+    color: #414141;
+    //background: #f4f8ee;
+    padding: .625rem;
+    cursor: pointer;
+    border: 1px solid #4d4d4d;
+  }
+  .dropdown-menu {
+    left: auto;
+    width: 90%;
+    background: #f4f8ee;
+    border: none;
+    border-radius: 0;
+  }
+  .select-list {
+    display: block;
+    color: #414141;
+    padding: .625rem 1.25rem;
+  }
+  .select-list:hover {
+    background: #93c241;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.sort-by {
+  font-size: 18px;
+  color: #93c241;
+  text-align: right;
+}
+.select-title .fa-caret-down {
+  padding-top: 5px;
+}
+.page-input {
+  border-radius: 4px;
+  width: 56px;
+  text-align: center;
+  color: #808080;
+  border: 1px solid #4d4d4d;
+  line-height: 26px;
+  padding: 3px 6px;
+}
+.icheck-minimal {
+  ul {
+    padding: 10px 0;
+  }
+  ul + ul {
+    border-top: 1px solid #fff;
+  }
+  label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .icheckbox_minimal-green.checked + label {
+    color: #93c241;
+  }
+}
+/**** category end ***/
+
+/**** product detail ***/
+.product-id{
+  font-size: 24px;
+  color: #4c4c4c;
+}
+.product-brand span{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+}
+.brand-img{
+  width:60px;
+  margin-right: 10px;
+}
+.product-introduction{
+  color: #808080;
+  font-size: 16px;
+  margin:10px 0 30px;
+}
+.product-price{
+  margin: 10px 0 20px;
+  .price{
+    font-size: 30px;
+    display: block;
+  }
+  .old-price{
+    font-size: 24px;
+    display: block;
+  }
+}
+.product-quantity .qty {
+  width: 160px;
+  color: #808080;
+}
+ .num-input-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+}
+.product-quantity #quantity_wanted {
+  background-color: #fff;
+  height: 46px;
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid #000;
+  font-size: 18px;
+  margin-left: 40px;
+}
+ .product-num {
+  padding: 8px 11px;
+  background: none;
+  border: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.product-num.num-plus{
+  left: 116px;
+}
+.btn-add-cart{
+  height: 46px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.btn-add-cart i{
+  font-size: 30px;
+  margin-right: 10px;
+}
+.social-sharing{
+  ul,li{
+    display: inline-block;
+  }
+  li{
+    margin: 0 10px;
+  }
+  a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    color: #fff;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    &:hover{
+      color: #93c241;
+    }
+  }
+}
+.tabs{
+  li{
+    display: inline-block;
+  }
+}
+.information-title-tab{
+  text-align: center;
+  font-size: 30px;
+  color: #808080;
+  li a{
+    font-size: 30px;
+    color: #808080;
+  }
+  li.active a{
+    color: #93c241;
+  }
+}
+.product-style-2 .product-list{
+  position: relative;
+}
+.view-more-master{
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 5;
+}
+.view-product{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  background-color: #93c241;
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  &:hover{
+    color: #fff;
+    background-color: #ed4054;
+  }
+}
+.product-style-2 .product-list:hover {
+  border-color: transparent;
+  .view-more-master{
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .product-quantity .qty ,.product-quantity .add{
+    display: inline-block;
+  }
+}
+/**** product detail end ***/
+
+/**** brands page ***/
+.brand-introduction{
+  padding-top: 30px;
+}
+/**** brands page end ***/
+
+/**** blog page ***/
+
+/**** blog page end ***/
 @media (min-width: 768px) {
   .hide-md {
     display: none !important;
@@ -632,3 +967,4 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
   }
 }
+

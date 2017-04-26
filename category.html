@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Category Hago</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/css/green.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/plugins/js/icheck.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body class="layout-full-width">
+<main>
+    <header id="header">
+        <nav class="header-nav hide-xs">
+            <!--電腦版-->
+            <div class="pull-left">
+                <div class="inline-block-wrap">
+                    <div id="_desktop_user_info">
+                        <div class="user-info">
+                            <a href="">
+                                <span class="hidden-sm-down">Sign in</span>
+                            </a>
+                            /
+                            <a class="" href="">
+                                Sign up
+                            </a>
+                        </div>
+                    </div>
+                    <div id="_desktop_language_selector">
+                        <div class="language-selector-wrapper">
+                            <div class="language-selector dropdown js-dropdown">
+                                <span class="expand-more" data-toggle="dropdown">English</span>
+                                <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-sm-down">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-menu hide-xs">
+                                    <li class="current">
+                                        <a href="" class="dropdown-item">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item">繁體中文</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="inline-block-wrap">
+                    <div id="search_widget" class="search-widget">
+                        <div class="search-dropdown dropdown js-dropdown">
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-search fa-2x"></i></span>
+                            <div class="dropdown-menu">
+                                <form method="get" action="http://prestashop/en/search" id="search-show">
+                                    <input type="hidden" name="controller" value="search">
+                                    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" name="s" value="" placeholder="Search our catalog" class="ui-autocomplete-input" autocomplete="off">
+                                    <button type="submit" id="search_widget_submit">
+                                        <i class="fa fa-search fa-2x"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="_desktop_cart">
+                        <div class="blockcart cart-preview inactive" data-refresh-url="http://prestashop/en/module/ps_shoppingcart/ajax">
+                            <div class="header">
+                                <i class="fa fa-cart-arrow-down fa-2x"></i> <span class="cart-products-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-top navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav-bs" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <i class="fa fa-navicon"></i>
+                    </button>
+                    <div id="_mobile_cart" class="mobile-cart hide-md">
+                        <div class="blockcart cart-preview inactive" data-refresh-url="http://prestashop/en/module/ps_shoppingcart/ajax">
+                            <div class="header">
+                                <i class="fa fa-cart-arrow-down fa-2x"></i> <span class="cart-products-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--mobile user-->
+                    <div class="user-info hide-md">
+                        <a href=""><i class="fa fa-user"></i></a>
+                    </div>
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="header-nav-bs">
+                    <ul class="dp-flexbox top-header nav navbar-nav">
+                        <li class="active dropdown">
+                            <a href="#">PRODUCTS</a>
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-angle-down"></i></span>
+                            <div class="down-level-1 dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Baby Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kids Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Grocery</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Drinks and Beverages</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">BRANDS</a>
+                            <span class="expand-more" data-toggle="dropdown"><i class="fa fa-angle-down"></i></span>
+                            <div class="down-level-1 dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Hago</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">SALES LOCATIONS</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="language-selector-wrapper">
+                        <!--手機顯示-->
+                        <span class="hide-md">Language:</span>
+                        <div class="language-selector dropdown js-dropdown">
+                            <!--手機版-->
+                            <select class="hide-md">
+                                <option value="http://prestashop/en/" selected="selected">English</option>
+                                <option value="http://prestashop/tw/">繁體中文</option>
+                            </select>
+                            <!--手機版 end-->
+                        </div>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </header>
+    <section id="wrapper">
+        <div class="container">
+            <!--麵包屑導航-->
+            <!--<ol class="breadcrumb">-->
+            <!--<li>-->
+            <!--<a href="">-->
+            <!--<span>Home</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href="">-->
+            <!--<span>Category</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--</ol>-->
+
+            <div class="banner-wrapper">
+                <div class="bg-img top-banner" style="background-image: url('assets/img/demo/banner-category.jpg')"></div>
+            </div>
+            <div class="row mt60">
+                <div id="left-column" class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="block-categories">
+                        <h4 class="font-green">Categories</h4>
+                        <ul class="category-ul list-unstyled">
+                            <li>
+                                <a href="#">Infant formulas</a>
+                                <a class="collapse-arrow collapsed" data-toggle="collapse" href="#category-1" aria-expanded="false" aria-controls="category-1">
+                                    <i class="fa fa-caret-down"></i></a>
+                                <div id="category-1" class="panel-collapse collapse">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="">Cow-milk based formulas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Goat-milk based formulas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Special formulas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="#">Baby porridges</a>
+                                <a class="collapse-arrow collapsed" data-toggle="collapse" href="#category-2" aria-expanded="false" aria-controls="category-2">
+                                    <i class="fa fa-caret-down"></i></a>
+                                <div id="category-2" class="panel-collapse collapse">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="">Cow-milk based formulas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Goat-milk based formulas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Special formulas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="#">Jar Food</a>
+                                <a class="collapse-arrow collapsed" data-toggle="collapse" href="#category-3" aria-expanded="false" aria-controls="category-3">
+                                    <i class="fa fa-caret-down"></i></a>
+                                <div id="category-3" class="panel-collapse collapse">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="">Cow-milk based formulas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Goat-milk based formulas</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Special formulas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="search_filters_wrapper" class="mt30">
+                        <h4 class="font-green">
+                            <a class="collapse-arrow" data-toggle="collapse" href="#filters-collapse" aria-expanded="false" aria-controls="filters-collapse">Categories
+                                <i class="fa fa-caret-down"></i></a>
+                        </h4>
+                        <div id="filters-collapse" class="filters-collapse collapse in">
+                            <div class="icheck-minimal">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-1"> <label for="minimal-checkbox-1">Organic</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-2"> <label for="minimal-checkbox-2">Non-organic</label>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-21"> <label for="minimal-checkbox-21">0-6 months</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-22"> <label for="minimal-checkbox-22">6-12 months</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="minimal-checkbox-23">
+                                        <label for="minimal-checkbox-23">12-36 months</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="minimal-checkbox-24">
+                                        <label for="minimal-checkbox-24">36+ months</label>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-31"> <label for="minimal-checkbox-31">holle</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox32"> <label for="minimal-checkbox32">physiolac</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="minimal-checkbox-33">
+                                        <label for="minimal-checkbox-33">mogli</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-34"> <label for="minimal-checkbox-34">fifty 50</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-35"> <label for="minimal-checkbox-35">castagno</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="minimal-checkbox-36">
+                                        <label for="minimal-checkbox-36">maintal</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-37"> <label for="minimal-checkbox-37">vitamont</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="" id="minimal-checkbox-38"> <label for="minimal-checkbox-38">naturata</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-wrapper" class="col-md-9 col-sm-8 col-xs-12">
+                    <div class="row sort-by-row mt60">
+                        <div class="col-sm-offset-6 col-sm-2 col-xs-4 hide-xs sort-by">Sort by:</div>
+                        <div class="col-sm-4 col-xs-8 products-sort-order dropdown">
+                            <a class="select-title" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Relevance <i class="fa fa-caret-down pull-right"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="" class="select-list current js-search-link">
+                                    Relevance
+                                </a>
+                                <a href="" class="select-list js-search-link">
+                                    Name, A to Z
+                                </a>
+                                <a href="" class="select-list js-search-link">
+                                    Name, Z to A
+                                </a>
+                                <a href="" class="select-list js-search-link">
+                                    Price, low to high
+                                </a>
+                                <a href="" class="select-list js-search-link">
+                                    Price, high to low
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrapper">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product-list">
+                                    <a href="#" class="product-img">
+                                        <img src="assets/img/demo/product1.jpg" alt="" class="img-responsive">
+                                    </a>
+                                    <div class="product-description">
+                                        <h4 class="product-title">
+                                            <a href="">Fructose Coconut Cookies</a>
+                                        </h4>
+                                        <div class="product-price-and-shipping">
+                                            <span class="price">HK$ 35.00</span>
+                                            <span class="old-price">HK$ 29.90</span>
+                                        </div>
+                                    </div>
+                                    <ul class="product-flags">
+                                        <li class="new">New</li>
+                                        <li class="sale">Sale</li>
+                                    </ul>
+
+                                    <div class="highlighted-informations">
+                                        <form action="" method="post">
+                                            <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                                <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product-list">
+                                    <a href="#" class="product-img">
+                                        <img src="assets/img/demo/product2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                    <div class="product-description">
+                                        <h4 class="product-title">
+                                            <a href="">Peanut Butter Crunchy</a>
+                                        </h4>
+                                        <div class="product-price-and-shipping">
+                                            <span class="price">HK$ 25.00</span>
+                                        </div>
+                                    </div>
+                                    <ul class="product-flags">
+                                        <li class="new">New</li>
+                                    </ul>
+
+                                    <div class="highlighted-informations">
+                                        <form action="" method="post">
+                                            <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                                <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product-list">
+                                    <a href="#" class="product-img">
+                                        <img src="assets/img/demo/product3.jpg" alt="" class="img-responsive">
+                                    </a>
+                                    <div class="product-description">
+                                        <h4 class="product-title">
+                                            <a href="">Peanut Butter Crunchy</a>
+                                        </h4>
+                                        <div class="product-price-and-shipping">
+                                            <span class="price">HK$ 25.00</span>
+                                        </div>
+                                    </div>
+                                    <ul class="product-flags">
+                                        <li class="new">New</li>
+                                    </ul>
+
+                                    <div class="highlighted-informations">
+                                        <form action="" method="post">
+                                            <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                                <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product-list">
+                                    <a href="#" class="product-img">
+                                        <img src="assets/img/demo/product7.jpg" alt="" class="img-responsive">
+                                    </a>
+                                    <div class="product-description">
+                                        <h4 class="product-title">
+                                            <a href="">Fructose Coconut Cookies</a>
+                                        </h4>
+                                        <div class="product-price-and-shipping">
+                                            <span class="price">HK$ 35.00</span>
+                                        </div>
+                                    </div>
+                                    <ul class="product-flags">
+                                        <li class="new">New</li>
+                                    </ul>
+
+                                    <div class="highlighted-informations">
+                                        <form action="" method="post">
+                                            <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                                <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product-list">
+                                    <a href="#" class="product-img">
+                                        <img src="assets/img/demo/product8.jpg" alt="" class="img-responsive">
+                                    </a>
+                                    <div class="product-description">
+                                        <h4 class="product-title">
+                                            <a href="">Fructose Coconut Cookies</a>
+                                        </h4>
+                                        <div class="product-price-and-shipping">
+                                            <span class="price">HK$ 35.00</span>
+                                        </div>
+                                    </div>
+                                    <ul class="product-flags">
+                                        <li class="new">New</li>
+                                    </ul>
+
+                                    <div class="highlighted-informations">
+                                        <form action="" method="post">
+                                            <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                                <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product-list">
+                                    <a href="#" class="product-img">
+                                        <img src="assets/img/demo/product9.jpg" alt="" class="img-responsive">
+                                    </a>
+                                    <div class="product-description">
+                                        <h4 class="product-title">
+                                            <a href="">Fructose Coconut Cookies</a>
+                                        </h4>
+                                        <div class="product-price-and-shipping">
+                                            <span class="price">HK$ 35.00</span>
+                                        </div>
+                                    </div>
+                                    <ul class="product-flags">
+                                        <li class="new">New</li>
+                                    </ul>
+
+                                    <div class="highlighted-informations">
+                                        <form action="" method="post">
+                                            <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                                <i class="fa fa-cart-arrow-down"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination page-list">
+                                <li>
+                                    <a href="" class="disabled js-search-link">1</a>
+                                </li>
+                                <li>
+                                    <a href="" class="disabled js-search-link">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="next" href="" class="js-search-link">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="current">
+                                    <a class="js-search-link">
+                                        <input type="text" value="1" class="page-input">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="js-search-link">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="disabled js-search-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="disabled js-search-link">10</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Get to Know Us</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About Hago</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy Statement</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Let Us Help You</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About payment</a>
+                            </li>
+                            <li>
+                                <a href="#">About delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">About return & replacement</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Communities</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav col-sm-3 col-xs-6">
+                        <h4>Contacts and Location</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Sales locations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="media-icon-wrapper">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                        <div class="copyright">Copyright © 2017 HAGO Limited. All Right Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="scrollUp" href="javascript:void(0)"><i class="fa fa-angle-up fa-2x"></i></a>
+</main>
+</body>
+</html>
