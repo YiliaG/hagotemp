@@ -681,7 +681,7 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hov
 
 /* line 557, ../sass/main.scss */
 .blog-table {
-  min-height: 350px;
+  height: 350px;
 }
 
 /* line 560, ../sass/main.scss */
@@ -747,7 +747,7 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hov
 @media (max-width: 1200px) and (min-width: 768px) {
   /* line 603, ../sass/main.scss */
   .blog-table {
-    min-height: 230px;
+    height: 230px;
   }
 
   /* line 606, ../sass/main.scss */
@@ -1208,50 +1208,45 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hov
 }
 /**** product detail end ***/
 /**** brands page ***/
-/* line 971, ../sass/main.scss */
-.brand-introduction {
-  padding-top: 30px;
-}
-
 /**** brands page end ***/
 /**** blog page ***/
-/* line 977, ../sass/main.scss */
+/* line 975, ../sass/main.scss */
 .blog-nav {
   background-color: #f4f8ee;
   padding: 5px 15px;
 }
-/* line 980, ../sass/main.scss */
+/* line 978, ../sass/main.scss */
 .blog-nav ul {
   margin: 6px 0;
   padding-left: 0;
 }
-/* line 984, ../sass/main.scss */
+/* line 982, ../sass/main.scss */
 .blog-nav ul, .blog-nav li {
   float: left;
 }
-/* line 987, ../sass/main.scss */
+/* line 985, ../sass/main.scss */
 .blog-nav li {
   margin: 0 40px;
 }
-/* line 989, ../sass/main.scss */
+/* line 987, ../sass/main.scss */
 .blog-nav li a {
   color: #4c4c4c;
 }
-/* line 991, ../sass/main.scss */
+/* line 989, ../sass/main.scss */
 .blog-nav li a:hover {
   color: #93c241;
 }
-/* line 997, ../sass/main.scss */
+/* line 995, ../sass/main.scss */
 .blog-nav li.active a {
   color: #93c241;
 }
 
-/* line 1002, ../sass/main.scss */
+/* line 1000, ../sass/main.scss */
 .blog-list {
   margin: 60px 0;
 }
 
-/* line 1005, ../sass/main.scss */
+/* line 1003, ../sass/main.scss */
 .blog-read-more {
   margin-top: 30px;
   min-width: 155px;
@@ -1259,26 +1254,97 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hov
   font-weight: 600;
 }
 
-@media (max-width: 767px) {
+/* line 1009, ../sass/main.scss */
+.blog-detail {
+  background-color: #f4f8ee;
+}
+
+@media (min-width: 768px) {
   /* line 1013, ../sass/main.scss */
+  .blog-banner-info {
+    padding: 0 20px;
+  }
+  /* line 1015, ../sass/main.scss */
+  .blog-banner-info .blog-date {
+    color: #93c241;
+  }
+  /* line 1018, ../sass/main.scss */
+  .blog-banner-info .social-sharing {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1025, ../sass/main.scss */
   .blog-nav li {
     float: none;
   }
 }
 /**** blog page end ***/
+/**** customer service ***/
+/* line 1033, ../sass/main.scss */
+.a-email {
+  color: #93c241;
+}
+
+/* line 1037, ../sass/main.scss */
+.service-list > a {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #93c241;
+}
+/* line 1044, ../sass/main.scss */
+.service-list .collapse-arrow .fa-caret-down:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 1049, ../sass/main.scss */
+.service-list .collapse-arrow.collapsed .fa-caret-down:before {
+  content: "\f0d8";
+}
+
+/* line 1054, ../sass/main.scss */
+.service-list ul, .service-list ol {
+  margin-bottom: 30px;
+}
+/* line 1057, ../sass/main.scss */
+.service-list .panel-collapse {
+  margin: 20px 0 30px;
+}
+
+/* line 1061, ../sass/main.scss */
+.list-nostyle {
+  list-style: none;
+  padding-left: 30px;
+}
+
+/**** customer service end ***/
+/**** common section  ***/
+/* line 1068, ../sass/main.scss */
+.description-wrapper {
+  margin: 60px 0;
+}
+/* line 1070, ../sass/main.scss */
+.description-wrapper p {
+  margin: 10px 0 20px;
+}
+
+/**** common section end ***/
 @media (min-width: 768px) {
-  /* line 1020, ../sass/main.scss */
+  /* line 1076, ../sass/main.scss */
   .hide-md {
     display: none !important;
   }
 
-  /* line 1023, ../sass/main.scss */
+  /* line 1079, ../sass/main.scss */
   .desktop-mt50 {
     margin-top: 50px;
   }
 }
 @media (max-width: 767px) {
-  /* line 1028, ../sass/main.scss */
+  /* line 1084, ../sass/main.scss */
   .hide-xs {
     display: none !important;
   }
