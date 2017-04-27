@@ -1030,11 +1030,12 @@ h1, h2, h3, h4, h5, h6 {
 /**** blog page end ***/
 
 /**** customer service ***/
-.a-email{
+.a-email {
   color: #93c241;
+  font-weight: 700;
 }
-.service-list{
-  >a{
+.service-list {
+  > a {
     display: block;
     position: relative;
     font-size: 24px;
@@ -1043,22 +1044,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   .collapse-arrow .fa-caret-down:before {
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
   }
   .collapse-arrow.collapsed .fa-caret-down:before {
     content: "\f0d8";
   }
 }
-.service-list{
-  ul,ol{
-    margin-bottom:30px;
+.service-list {
+  ul, ol {
+    margin-bottom: 30px;
   }
-  .panel-collapse{
+  .panel-collapse {
     margin: 20px 0 30px;
   }
 }
-.list-nostyle{
+.list-nostyle {
   list-style: none;
   padding-left: 30px;
 }
@@ -1067,11 +1068,62 @@ h1, h2, h3, h4, h5, h6 {
 /**** common section  ***/
 .description-wrapper {
   margin: 60px 0;
-  p{
+  p {
     margin: 10px 0 20px;
   }
 }
 /**** common section end ***/
+
+/**** contact us ***/
+.bg-light-green {
+  background-color: #f4f8ee;
+  padding: 15px;
+}
+.contact-form-wrapper{
+  margin: 60px 0;
+  padding: 30px 15px;
+  @include box-shadow(0px 1px 2px #ccc);
+}
+.custom-form{
+  .form-group{
+    margin-bottom: 20px;
+  }
+  .control-label{
+    padding-top: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: normal;
+  }
+  .form-control{
+    border-radius: 0;
+    border-color: #ccc;
+  }
+}
+.btn-gray{
+  color:#fff;
+  &:hover, &:focus, &.focus{
+    color:#fff;
+    background-color: #fff;
+    border-right:1px solid #ccc;
+  }
+}
+@media (min-width: 768px) {
+  .dl-custom-1 {
+    dt,dd{
+      margin-bottom: 10px;
+    }
+    dt {
+      text-align: left;
+      width: 140px;
+      font-weight: normal;
+    }
+    dd{
+      margin-left: 150px;
+    }
+  }
+}
+/**** contact us end ***/
+
 @media (min-width: 768px) {
   .hide-md {
     display: none !important;
