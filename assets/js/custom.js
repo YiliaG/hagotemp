@@ -4,7 +4,6 @@
  */
 $(function () {
 
-
     // 產品滾動
     var owl = $('.product-carousel');
     owl.owlCarousel({
@@ -24,20 +23,20 @@ $(function () {
         }
     });
 
-    // 合作品牌滾動
+    // 首頁品牌滾動
     $('#brands-carousel-1').owlCarousel({
         nav: true,
         loop: true,
         navText: ["", ""],
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             768: {
                 items: 3
             },
             1000: {
-                items: 3
+                items: 6
             }
         }
     });

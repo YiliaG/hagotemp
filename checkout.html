@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Hago</title>
+    <title>Check Out</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/css/bootstrap.css">
     <link rel="stylesheet" href="assets/plugins/css/font-awesome.min.css">
@@ -171,149 +171,181 @@
                         <span>Home</span>
                     </a>
                 </li>
+                <li>
+                    <a href="">
+                        <span>shopping cart</span>
+                    </a>
+                </li>
                 <li class="active">
                     <a href="">
-                        <span>Blog</span>
+                        <span>check out</span>
                     </a>
                 </li>
             </ol>
+
             <div id="content-wrapper">
-                <div class="blog-nav clearfix">
-                    <h4 class="pull-left">Categories:</h4>
-                    <ul>
-                        <li class="active">
-                            <a href="#">News</a>
-                        </li>
-                        <li>
-                            <a href="#">Recipes</a>
-                        </li>
-                        <li>
-                            <a href="#">common sense</a>
-                        </li>
-                        <li>
-                            <a href="#">Lifestyle</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="checkout-wrapper mb60">
+                            <div class="checkout-step" id="checkout-personal-information-step">
+                                <h3 class="step-title">PERSONAL INFORMATION</h3>
+                                <div class="tabs mt30">
+                                    <ul class="list-unstyled information-title-tab">
+                                        <li class="active">
+                                            <a href="#order-guest" aria-controls="order-guest" role="tab" data-toggle="tab">Order as a guest</a>
+                                        </li>
+                                        |
+                                        <li>
+                                            <a href="#oder-customer" aria-controls="oder-customer" role="tab" data-toggle="tab">Sign in</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt30" id="tab-content">
+                                        <div class="tab-pane fade in active" id="order-guest">
+                                            <form action="" class="form-horizontal custom-form">
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">First Name</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="icheck-minimal">
+                                                            <span class="mr20"> <input type="radio" id="man" name="demo-radio">
+                                                                <label for="man">Mr.</label> </span> <span>
+                                                            <input type="radio" id="woman" name="demo-radio">
+                                                            <label for="woman">Mrs.</label> </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">First Name</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Last Name</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Email Address</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="email" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Password</label>
+                                                    <div class="col-sm-8">
+
+                                                        <div class="toggle-password js-parent-focus">
+                                                            <input class="form-control js-child-focus js-visible-password" type="password" value="">
+                                                            <span class="toggle-password-btn">
+                                                                <button class="btn" type="button"><i class="fa fa-eye"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Birthdate</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" placeholder="xx/xx/xxxx">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-4 col-sm-8">
+                                                        <div class="custom-checkbox icheck-minimal">
+                                                            <input name="newsletter" type="checkbox" value="1" id="newsletter">
+                                                            <label for="newsletter">Sign up for our newsletter</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-right mt30 mb30">
+                                                        <button class="btn btn-primary" type="submit">CONTINUE</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="oder-customer">
+                                            <form action="" class="form-horizontal custom-form">
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Email Address</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="email" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Password</label>
+                                                    <div class="col-sm-8">
+
+                                                        <div class="toggle-password js-parent-focus">
+                                                            <input class="form-control js-child-focus js-visible-password" type="password" value="" >
+                                                            <span class="toggle-password-btn">
+                                                                <button  class="btn" type="button"><i class="fa fa-eye"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <div class="forgot-password">
+                                                        <a href="" class="font-green">Forgot your password? </a>
+                                                    </div>
+
+                                                    <div class="mt30 mb30">
+                                                        <button class="btn btn-primary" type="submit">Log In</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="bg-light-green">
+                            <dl class="dl-horizontal dl-custom-1">
+                                <dt>3 items</dt>
+                                <dd class="text-right">HK$ 319.00</dd>
+                                <dt>Shipping</dt>
+                                <dd class="text-right">HK$ 7.00</dd>
+                                <dt>Taxes</dt>
+                                <dd class="text-right">HK$ 0.00</dd>
+                            </dl>
+                            <form class="clearfix mb30">
+                                <p class="font-green">Have a promo code?</p>
+                                <div class="promo-wrapper">
+                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Promo Code">
+                                    <button type="submit" class="btn btn-primary">Add</button>
+                                </div>
+                            </form>
+                            <div class="cart-total">
+                                <hr class="border-white">
+                                <dl class="dl-horizontal dl-custom-1">
+                                    <dt>Total</dt>
+                                    <dd class="text-right">HK$ 326.00</dd>
+                                </dl>
+                            </div>
+                            <div class="checkout cart-detailed-actions">
+                                <div class="text-center mt30 mb30">
+                                    <a href="" class="btn btn-danger">CHECKOUT</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="blog-list-wrapper">
-                    <div class="row blog-list">
-                        <div class="col-sm-6 col-xs-12">
-                            <a href="#"><img src="assets/img/demo/blog-1.jpg" alt="" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <table class="table-wall blog-table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <h3 class="font-green font-simiblod">
-                                            <a href="#">Helping to Manage and Cure Diabetes.</a>
-                                        </h3>
-                                        <div class="blog-tags">
-                                            <span class="blog-tag">News</span>
-                                            <span class="blog-date">24 / 04 / 2017</span>
-                                        </div>
-                                        <div class="blog-brief">
-                                            <p>Fifty50 was started in 1989 by 3 people with 3 products made especially for individuals with diabetes. One had diabetes, one was a diabetes educator, and one was a volunteer raising money for diabetes research. Our dream was to create great tasting  Low Glycemic foods that  </p>
-                                        </div>
-                                        <a href="" class="btn btn-primary blog-read-more">Read More</a>
 
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row blog-list">
-                        <div class="col-sm-6 col-xs-12">
-                            <a href="#"><img src="assets/img/demo/blog-2.jpg" alt="" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <table class="table-wall blog-table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <h3 class="font-green font-simiblod">
-                                            <a href="#">Helping to Manage and Cure Diabetes.</a>
-                                        </h3>
-                                        <div class="blog-tags">
-                                            <span class="blog-tag">Recipes</span>
-                                            <span class="blog-date">21 / 04 / 2017</span>
-                                        </div>
-                                        <div class="blog-brief">
-                                            <p>Fifty50 was started in 1989 by 3 people with 3 products made especially for individuals with diabetes. One had diabetes, one was a diabetes educator, and one was a volunteer raising money for diabetes research. Our dream was to create great tasting Low Glycemic foods that individuals living with diabetes could enjoy while managing their disease and, at the same time, try to help find a diabetes cure[……]</p>
-                                        </div>
-                                        <a href="" class="btn btn-primary blog-read-more">Read More</a>
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row blog-list">
-                        <div class="col-sm-6 col-xs-12">
-                            <a href="#"><img src="assets/img/demo/blog-3.jpg" alt="" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <table class="table-wall blog-table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <h3 class="font-green font-simiblod">
-                                            <a href="#">Helping to Manage and Cure Diabetes.</a>
-                                        </h3>
-                                        <div class="blog-tags">
-                                            <span class="blog-tag">Common Sence</span>
-                                            <span class="blog-date">17 / 04 / 2017</span>
-                                        </div>
-                                        <div class="blog-brief">
-                                            <p>If the carrot meal is handled easily during the first two weeks, then the pure carrot meal should be replaced with a carrot-potato meal.
-                                                Ingredients:90g Carrots (or another vegetable like parsnip, broccoli or pumpkin) ,40g Potatoes</p>
-                                        </div>
-                                        <a href="" class="btn btn-primary blog-read-more">Read More</a>
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="text-center mb30">
-                        <ul class="pagination page-list">
-                            <li>
-                                <a href="" class="disabled js-search-link">1</a>
-                            </li>
-                            <li>
-                                <a href="" class="disabled js-search-link">
-                                    <i class="fa fa-angle-double-left"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a rel="next" href="" class="js-search-link">
-                                    <i class="fa fa-angle-left"></i>
-                                </a>
-                            </li>
-                            <li class="current">
-                                <a class="js-search-link">
-                                    <input type="text" value="1" class="page-input">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="js-search-link">
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="disabled js-search-link">
-                                    <i class="fa fa-angle-double-right"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="disabled js-search-link">10</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
