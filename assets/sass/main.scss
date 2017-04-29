@@ -25,6 +25,9 @@ button:hover, button:active, button:focus, button:visited {
 .font-bold {
   font-weight: 700;
 }
+.font-light {
+  font-weight: 300;
+}
 .font-up {
   text-transform: uppercase;
 }
@@ -66,8 +69,8 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
   }
 }
-.cart-shadow {
-  @include box-shadow(1px 1px 2px #808080);
+.card-shadow {
+  @include box-shadow(1px 1px 2px #cccccc);
 }
 .bg-white {
   background-color: #fff;
@@ -76,9 +79,9 @@ h1, h2, h3, h4, h5, h6 {
 .font18 {
   font-size: 18px;
 }
-.a-green{
+.a-green {
   color: #93c241;
-  &:hover{
+  &:hover {
     color: #619409;
   }
 }
@@ -996,6 +999,52 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
+
+.blockcart-modal {
+  .modal-dialog {
+    max-width: 1140px;
+    width: 100%;
+  }
+  .modal-content {
+    border-radius: 0;
+    @include box-shadow(1px 1px 2px #ccc);
+  }
+  .modal-header {
+    background: #93c241;
+    .close {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+  .modal-title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
+  .divide-right {
+    border-right: 1px solid #93c241;
+  }
+  .cart-content {
+    padding-left: 25px;
+  }
+  .cart-content{
+    .btn{
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .btn-secondary{
+    background-color: #fff;
+    color: #808080;
+    @include box-shadow(1px 2px 3px #808080);
+    &:hover{
+      color: #c4c4c4;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .product-quantity .qty, .product-quantity .add {
     display: inline-block;
@@ -1210,7 +1259,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   > tbody > tr > th,
-  > tbody > tr > td{
+  > tbody > tr > td {
     font-weight: normal;
     font-size: 14px;
     color: #808080;
@@ -1380,4 +1429,3 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
   }
 }
-
